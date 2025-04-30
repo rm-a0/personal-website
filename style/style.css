@@ -6,7 +6,7 @@
     --txt-secondary-color: #FFFFFF;
     --left-offset: 18vw; /* main content offest from the left */
     --width-left: calc(100vw - var(--left-offset)); /* space left after offset */
-    --text-block-height: 50dvh;
+    --text-block-height: 60vh;
     --text-block-width: calc(var(--width-left)/2);
 }
 
@@ -15,6 +15,10 @@
     --bg-secondary-color: #FCFCFC;
     --txt-primary-color: #FFFFFF;
     --txt-secondary-color: #000000;
+}
+
+strong, b {
+    font-weight: 600;
 }
 
 /* Scrollbar */
@@ -178,7 +182,6 @@ section {
     flex-direction: column;
     height: 100dvh;
     width: var(--width-left);
-    scroll-snap-align: start;
     position: relative;
     margin-top: 20px;
     padding-left: var(--left-offset);
@@ -265,7 +268,6 @@ a {
 #skills .skill-graph-container {
     z-index: 4;
     overflow-x: hidden;
-    display: grid;
     grid-template-columns: 40px 1fr;
     grid-template-rows: repeat(auto-fill, 48px);
     overflow-y: scroll;
@@ -275,9 +277,8 @@ a {
     margin-right: 150px;
     margin-left: 60px;
     padding-left: 25px;
-    padding-top: 20px;
+    padding-top: 80px;
     padding-bottom: 20px;
-    background-color: var(--bg-secondary-color);
     border-radius: 10px;
 }
 
@@ -286,22 +287,19 @@ a {
     height: 3px;
     width: 280px; /* 100% value of progress bar */
     font-size: 0;
-    background-color: var(--txt-secondary-color);
+    background-color: var(--txt-primary-color);
     margin-left: 10px;
     border-radius: 20px;
 }
 /* -------------------------- */
 
 #skills img {
+
     align-self: center;
-    height: 25px;
-    width: 25px;
-    padding: 5px;
 }
 
 /* Projects */
 #projects .projects-menu {
-    scroll-snap-type: x mandatory;
     z-index: 4;
     overflow-x: auto;
     white-space: nowrap;
@@ -316,7 +314,6 @@ a {
 }
 
 #projects .projects-menu-item {
-    scroll-snap-align: start;
     align-self: center;
     height: calc(var(--text-block-height) - 12dvh);
     width: calc(var(--text-block-height) - 12dvh);
@@ -472,20 +469,15 @@ a {
         overflow: hidden;
         position: relative;
         overflow-x: auto;
-        white-space: nowrap;
         scroll-behavior: smooth;
         background-color: transparent;
         margin-right: var(--left-offset);
         margin-top: 35px;
         border-radius: 20px;
-        display: flex;
-        flex-direction: row;
         height: var(--text-block-height);
-        scroll-snap-type: x mandatory;
     }
 
     #skills .skill-text-container {
-        scroll-snap-align: start;
         height: var(--text-block-height);
         overflow-y: scroll;
         flex: 0 0 auto;
@@ -503,7 +495,6 @@ a {
     }
 
     #skills .skill-graph-container {
-        scroll-snap-align: start;
         flex: 0 0 auto;
         overflow: hidden;
         position: relative;
@@ -516,6 +507,7 @@ a {
     }
 
     #skills .skill-graph-container img {
+        margin-top: 2vh;
         margin-left: 15px;
     }
 }
