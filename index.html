@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="nav" aria-label="Main navigation">
+        <div class="nav-logo"><span class="vt accent">~/portfolio</span></div>
+        <button class="hamburger" id="menu-btn" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links" role="navigation">
+            <a href="#intro">init</a>
+            <a href="#about">about</a>
+            <a href="#projects">projects</a>
+            <a href="#skills">skills</a>
+            <a href="#contact">contact</a>
+        </div>
+    </nav>
+
+    <!-- Slide-in mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <nav aria-label="Mobile navigation">
+            <a href="#intro" class="mobile-link">01 // init</a>
+            <a href="#about" class="mobile-link">02 // about</a>
+            <a href="#projects" class="mobile-link">03 // projects</a>
+            <a href="#skills" class="mobile-link">04 // skills</a>
+            <a href="#contact" class="mobile-link">05 // contact</a>
+        </nav>
+    </div>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <main>
+
+        <!-- INTRO -->
+        <section id="intro" class="section fade-in">
+            <div class="intro-terminal">
+                <div class="terminal-bar">
+                    <span class="vt subtext">terminal — bash</span>
+                    <div class="terminal-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                </div>
+                <div class="terminal-body" id="terminal-body">
+                    <!-- Line 1: command -->
+                    <div class="terminal-line">
+                        <span class="vt accent prompt">guest@portfolio</span>
+                        <span class="vt subtext"> ./</span>
+                        <span class="vt text" id="typing-cmd"></span>
+                    </div>
+                    <!-- Line 2: output -->
+                    <div class="terminal-line" id="greeting-line" style="visibility:hidden">
+                        <span class="vt green prompt">-&gt;</span>
+                        <span class="vt subtext">&nbsp;Hello&nbsp;</span>
+                        <span class="vt accent" id="glitch-word"></span>
+                        <span class="vt subtext">, my name is&nbsp;</span>
+                        <span class="vt text">Michal</span>
+                    </div>
+                    <!-- Line 3: interactive prompt -->
+                    <div class="terminal-line" id="input-line" style="visibility:hidden">
+                        <span class="vt accent prompt">guest@portfolio</span>
+                        <span class="vt subtext"> &gt;&nbsp;</span>
+                        <span class="vt text" id="user-input-display"></span><span class="blink-cursor" id="cursor-block"></span>
+                    </div>
+                    <!-- Command output area -->
+                    <div id="cmd-output"></div>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <span class="vt subtext">scroll ↓</span>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section fade-in">
+            <h2 class="section-label vt">// about</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>CS student at <strong>Brno University of Technology</strong>, focused on machine learning systems, neural architectures, and tools that actually do something useful.</p>
+                    <p>I'm most interested in the overlap between deep learning research and real engineering: training custom neural networks, building on ideas from different parts of the field, and combining them into something that fits the problem.</p>
+                    <p>Outside of coding I spend time in Blender, draw and paint, read manga, and play more games than I probably should.</p>
+                    <a href="downloads/michal_repcik_cv.pdf" class="btn vt" download target="_blank" rel="noopener noreferrer">[$ download cv]</a>
+                </div>
+                <div class="about-ascii" aria-hidden="true">
+<pre class="ascii-art vt subtext">
+ ┌————————————————————————————┐
+ │       -- ML / AI --        │
+ │                            │
+ │       neural nets          │
+ │       transformers         │
+ │       embeddings           │
+ │       cellular automata    │
+ │                            │
+ │       // currently         │
+ │       bsc thesis 2026      │
+ └————————————————————————————┘
+</pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section fade-in">
+            <h2 class="section-label vt">// projects</h2>
+            <p class="section-sub vt subtext">── featured ──────────────────────────────</p>
+            <div class="projects-grid featured-grid" id="featured-grid"></div>
+            <p class="section-sub vt subtext">── other ─────────────────────────────────</p>
+            <div class="projects-grid" id="projects-grid"></div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section fade-in">
+            <h2 class="section-label vt">// skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3 class="vt accent skill-group-title">ML_AI</h3>
+                    <div class="skill-tags">
+                        <span class="tag vt">PyTorch</span>
+                        <span class="tag vt">Transformers</span>
+                        <span class="tag vt">Hugging Face</span>
+                        <span class="tag vt">LLMs</span>
+                        <span class="tag vt">XLM-RoBERTa</span>
+                        <span class="tag vt">DistilBERT</span>
+                        <span class="tag vt">Neural Cellular Automata</span>
+                        <span class="tag vt">PySpark</span>
+                        <span class="tag vt">Semantic Embeddings</span>
+                        <span class="tag vt">Collaborative Filtering</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="vt accent skill-group-title">LANGUAGES</h3>
+                    <div class="skill-tags">
+                        <span class="tag vt">Python</span>
+                        <span class="tag vt">C</span>
+                        <span class="tag vt">C++</span>
+                        <span class="tag vt">C#</span>
+                        <span class="tag vt">Java</span>
+                        <span class="tag vt">Lua</span>
+                        <span class="tag vt">PHP</span>
+                        <span class="tag vt">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="vt accent skill-group-title">TOOLS</h3>
+                    <div class="skill-tags">
+                        <span class="tag vt">Git</span>
+                        <span class="tag vt">Docker</span>
+                        <span class="tag vt">Azure DevOps</span>
+                        <span class="tag vt">Blender API</span>
+                        <span class="tag vt">VS Code</span>
+                        <span class="tag vt">Neovim</span>
+                        <span class="tag vt">.NET</span>
+                        <span class="tag vt">Avalonia</span>
+                        <span class="tag vt">Maui</span>
+                        <span class="tag vt">Pytest</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section fade-in">
+            <h2 class="section-label vt">// contact</h2>
+            <div class="contact-block">
+                <p class="vt subtext contact-desc">open to interesting problems. especially if neural networks are involved.</p>
+                <div class="contact-links">
+                    <a href="mailto:michalrepcik9@gmail.com" class="contact-btn vt" id="mail-link">[mail]</a>
+                    <a href="https://github.com/rm-a0" class="contact-btn vt" target="_blank" rel="noopener">[github]</a>
+                    <a href="https://www.linkedin.com/in/michal-rep%C4%8D%C3%ADk-87a687237/" class="contact-btn vt" target="_blank" rel="noopener">[linkedin]</a>
+                </div>
+                <p class="vt subtext footer-text" id="last-updated"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/projects.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/observer.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
