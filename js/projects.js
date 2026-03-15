@@ -14,7 +14,7 @@ const PROJECTS = [
         name: "Transformer Fact-Checker",
         desc: "End-to-end NLP pipeline for Czech/Slovak social-media comments: XLM-RoBERTa checkworthiness classifier and GPT-4.1 atomic claim extraction. Handled bilingual input with enriched context from linked sources.",
         tags: ["XLM-RoBERTa", "GPT-4.1", "Hugging Face", "NLP", "Python"],
-        year: "2025",
+        year: "2026",
         url: "https://github.com/rm-a0/fdm-hackathon",
         award: "1st place FDM Hackathon — claim extraction"
     },
@@ -23,7 +23,7 @@ const PROJECTS = [
         name: "Book Recommender",
         desc: "Multi-strategy backend service using collaborative filtering, semantic embeddings, author matching, and demographic signals. Scalable pipeline built on PySpark.",
         tags: ["PySpark", "Embeddings", "Collaborative Filtering", "Python"],
-        year: "2025",
+        year: "2026",
         url: "https://github.com/rm-a0/book-recommender",
         award: null
     },
@@ -33,7 +33,7 @@ const PROJECTS = [
         name: "Spark RAG Maintenance",
         desc: "Predictive maintenance pipeline for turbofan engines using the NASA C-MAPSS dataset. RAG-enhanced failure prediction with PySpark.",
         tags: ["PySpark", "RAG", "Predictive Maintenance", "Python"],
-        year: "2025",
+        year: "2026",
         url: "https://github.com/rm-a0/spark-rag-maintenance"
     },
     {
@@ -41,7 +41,7 @@ const PROJECTS = [
         name: "IMDb Sentiment Classifier",
         desc: "DistilBERT fine-tuning exercise for binary sentiment classification on the IMDb dataset.",
         tags: ["DistilBERT", "Fine-tuning", "PyTorch", "NLP"],
-        year: "2025",
+        year: "2026",
         url: "https://github.com/rm-a0/imdb-classifier"
     },
     {
@@ -89,7 +89,7 @@ const PROJECTS = [
         name: "2D Souls Engine",
         desc: "Simple game engine and Metroidvania demo built in Python with Pygame.",
         tags: ["Python", "Pygame", "Game Engine", "Metroidvania"],
-        year: "2025",
+        year: "2024",
         url: "https://github.com/rm-a0/2d-souls"
     },
     {
