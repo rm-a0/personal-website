@@ -16,7 +16,7 @@ const PROJECTS = [
         tags: ["XLM-RoBERTa", "GPT-4.1", "Hugging Face", "NLP", "Python"],
         year: "2026",
         url: "https://github.com/rm-a0/fdm-hackathon",
-        award: "1st place FDM Hackathon — claim extraction"
+        award: "1st place FDM Hackathon"
     },
     {
         featured: true,
@@ -26,6 +26,15 @@ const PROJECTS = [
         year: "2026",
         url: "https://github.com/rm-a0/book-recommender",
         award: null
+    },
+    {
+        featured: true,
+        name: "Media Intelligence Backend",
+        desc: "FastAPI + MongoDB backend for multi-source RSS ingestion, article deduplication, and AI enrichment. Added topic classification, sentiment analysis, Czech summarization, and embedding-based semantic search in a production-style pipeline.",
+        tags: ["FastAPI", "MongoDB", "NLP", "Embeddings", "Vector Search"],
+        year: "2026",
+        url: "https://github.com/rm-a0/lakmoos-hackathon",
+        award: "2nd place Lakmoos Hackathon"
     },
     // ── Standard ──────────────────────────────────────────────────────
     {
